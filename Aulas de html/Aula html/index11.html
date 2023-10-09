@@ -8,23 +8,31 @@
        
         body{
             font-family:sans-serif;
+         
         }
         table{
             border-collapse:collapse;
             width: 50%;
         }
-        table td, table th{
-            border:1px solid #ccc;
+        table td, table th, tfoot td{
+            border:1px solid #000000;
             padding:5px;
             text-align:left;
         }
         table caption{
-            caption-side:top;
-            text-align: center;
+            caption-side:bottom;
+            text-align:end;
             font-style: italic;
-            font-size:20px;
-            margin-bottom: 5px;
+            font-size:15px;
+            margin-top: 5px;
            
+        }
+        tfoot td{
+           background-color:#ccc;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } 
+        table thead th{
+            background-color:#ccc;
         }
     </style>
 </head>
@@ -41,21 +49,43 @@
         </thead>
         <tbody>
             <tr>
-               <td>Corpo 1</td>
+               <td colspan="2">Corpo 1</td>
                <td>Corpo 2</td>
-               <td>Corpo 3</td>
+               
             </tr>
             <tr>
-                <td>Corpo 1</td>
+                <td rowspan="2">Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+             </tr>
+             <tr>
+                
                 <td>Corpo 2</td>
                 <td>Corpo 3</td>
              </tr>
              <tr>
                 <td>Corpo 1</td>
                 <td>Corpo 2</td>
-                <td>Corpo 3</td>
+                <td rowspan="2">Corpo 3</td>
+             </tr>
+             <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                
+             </tr>
+             <tr>
+                <td>Corpo 1</td>
+                <td colspan="2">Corpo 2</td>
+                
              </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+             </tr>
+        </tfoot>
     </table>
 </body>
 </html>
