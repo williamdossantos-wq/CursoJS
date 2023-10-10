@@ -4,13 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários e Imputs HTML</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        
+        .label{
+            cursor:pointer;
+            display:block;
+        }
+        
+        
+    </style>
 </head>
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off">
 <p> Meu Formulário</p>
-<p> <label
-    >Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="seu nome">
+<p>
+     <label for="nome" class="label">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="seu nome" required>
+
+</p>
+<p> <label for="dev1" >Sou um dev:</label>
+    <input type="checkbox" id="dev1" name="dev1" value="sim">
+<br>
+ <label for="dev2" >Sou um dev:</label>
+    <input type="checkbox" id="dev2" name="dev2" value="sim">
+<br>
+
+ <label for="dev3" >Sou um dev:</label>
+    <input type="checkbox" id="dev3" name="dev3" value="sim" >
+</p>
+
+<p> 
+    Gênero: <br>
+    <label for="Masculino" >Masculino:</label>
+    <input type="radio" id="Masculino" name="genero" value="Masculino">
+<br>
+ <label for="Feminino" >Feminino:</label>
+    <input type="radio" id="Feminino" name="genero" value="Feminino">
+<br>
+
+ <label for="Neutro" >Neutro:</label>
+    <input type="radio" id="Neutro" name="genero" value="Neutro" >
+<br>
+    <label for="transformes" >transformes:</label>
+    <input type="radio" id="transformes" name="genero" value="transformes" >
+
+</p>
+<p>
+    <label for="date" class="label">date:</label>
+   <input type="date" id="nome" name="date" value="2023-10-09">
+
+</p>
+<p>
+    <label for="datetime" class="label">date:</label>
+   <input type="datetime-local" id="datetime" name="datetime" value="2023-10-09" required>
+
+</p>
+<p>
+    <label for="time" class="label">time:</label>
+   <input type="time" id="time" name="time" value="12:15" required>
+
+</p>
+<p>
+    <label for="Cor" class="label">Cor preferida:</label>
+   <input type="color" id="Cor" name="Cor" value="#ff0000" required>
+
+</p>
+<p>
+    <label for="Email" class="label">E-mail:</label>
+   <input type="email" id="Email" name="Email" value="fulanodetal@gmail.com" required>
+</p>
+<p>
+    <label for="file" class=" Suafoto">Sua foto:</label><br>
+   <input type="file" id="file" name="file" >
+</p>
+<p>
+    <label for="password" class="label">Sua senha:</label>
+   <input type="password" id="password" name="password" placeholder="sua senha">
+</p>
+<p>
+    <label for="url" class="label">Sua url:</label>
+   <input type="url" id="url" name="url" placeholder="sua url">
+</p>
+<p>
+    <label for="select" >Selecione alguma opção:</label> <br>
+    <select id="select" name="select"><option value="Qualquer 1" label="label1">
+        <option value="Qualquer 2" label="label2" disabled>
+            <option value="Qualquer 3" label="label3">
+                <option value="Qualquer 4" label="label4"></option>
+            </option>
+        </option>
+    </select>
+</p>
+<p>
+    <label for="textarea">textarea</label>
+    <textarea></textarea>
 </p>
 <p>
     <button type="reset">Reset</button>
@@ -18,6 +108,7 @@
 
     
 </p>
+
     </form>
 </body>
 </html>
