@@ -1,30 +1,30 @@
-/* Formulários e Imputs HTML*/
-body{
-    font-family: sans-serif;
-}
-
-.label{
-    cursor:pointer;
-    display:block;
-}
-nav{
-   width: 300px;
-   height: 900px;
-   
-}
-div{
-    display:flex;  
-   
-   
-}
-.p{
-    display: block;
-    width: 900px;
-    height: 900px;
-}
 /*Separando Html e CSS*/
 .um{
     background-color: #00ffff;
     height: 100px;
     width: 100px;
+}
+/*Seletores básicos do CSS*/
+*{
+    margin:0;
+    padding:0;
+}
+h1, p{
+    color: red;
+}
+body div section h1,
+body div section p {
+color:blueviolet;
+}
+.azul{
+    color:blue;
+}
+.italico,.verde{
+    font-style: italic;
+}
+.verde{
+    color:green;
+}
+body h2{
+   font-size:20px;
 }
