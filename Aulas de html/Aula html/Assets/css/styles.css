@@ -9,9 +9,7 @@
     margin:0;
     padding:0;
 }
-h1, p{
-    color: red;
-}
+
 body div section h1,
 body div section p {
 color:blueviolet;
@@ -27,4 +25,17 @@ color:blueviolet;
 }
 body h2{
    font-size:20px;
+}
+.pai{
+    font-size: 50px;
+}
+.pai .filha .filha2{
+color:pink;
+}
+[meu-atributo]{
+    color:yellow;
+}
+/*Seletores básicos do CSS Parte 2*/
+.div .h1+p{
+    color:red;
 }
