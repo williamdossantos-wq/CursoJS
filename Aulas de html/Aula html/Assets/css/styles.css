@@ -39,3 +39,44 @@ color:pink;
 .div .h1+p{
     color:red;
 }
+/*Pseudo-classes*/
+a{
+color: red;
+}
+a:link{
+    color:pink;
+}
+a:hover{
+    background-color: blueviolet;
+    color:white;
+    text-decoration:none;
+}
+a:active{
+    background-color: #00ffff;
+    color: red;
+}
+h1:hover{
+    background-color: blue;
+}
+h1{
+   transition:all 1s ease-in-out;
+   width: 90px;
+}
+input:disabled{
+  background-color: blue;
+  cursor:not-allowed;
+}
+input:focus{
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5)
+}
+.mod:checked + p{
+    background-color: chocolate;
+
+}
+.para-lista:checked + .pai-lista .lista li:first-child{
+    background-color: cadetblue;
+
+}
+.pai-lista .lista li:last-child{
+    background-color: crimson;
+}
