@@ -71,6 +71,7 @@ input:focus{
 }
 .mod:checked + p{
     background-color: chocolate;
+   
 
 }
 .para-lista:checked + .pai-lista .lista li:first-child{
@@ -108,4 +109,13 @@ ul li::after{
     color:white;
    }
  
-   
+ .tres:hover{
+    color:red;
+ }
+ .tres > p{
+    display:none;
+ }
+ .tres:hover > p{
+display:block;
+
+ }
