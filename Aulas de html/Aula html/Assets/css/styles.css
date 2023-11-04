@@ -119,3 +119,11 @@ ul li::after{
 display:block;
 
  }
+ .listaq ul{
+    float: left;
+    margin: 0 0 0 100px;
+  
+ }
+ .tres{ 
+    clear: both;
+ }
