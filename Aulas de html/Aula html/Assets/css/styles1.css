@@ -4,6 +4,8 @@ h1{
 }
 body{
    background-image:linear-gradient(to right ,#f2f3ce,#d2ae7d,#bf5870 );
+   text-indent: 15px;
+ 
 }
 
  .alfa{
@@ -20,12 +22,13 @@ body{
  }
   html ,body{
     height: 100%;
+    scroll-behavior: smooth;
  }
 
  .beta{
    
   display: block;
-  margin:0 auto 10px auto;
+  margin:30px auto 5px auto;
   max-width:800px;
   border: 5px solid black;
   padding: 0 5px 0 5px;
