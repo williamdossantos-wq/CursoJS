@@ -1,10 +1,10 @@
 *{
-    margin:0;
-   /* height: 0;*/
-   /* box-sizing: border-box;*/
+   /* margin:0;
+    height: 0;
+    box-sizing: border-box;*/
 }
 /*Float e Display (Block, Inline-Block e Inline) e cores*/
-.grid .col{
+/*.grid .col{
    
     width:33.33%;
     height:300px;
@@ -22,16 +22,34 @@ background-color:#faff;
     display:block;
     clear:both;
 }
-/*p{clear: both;}*/
+p{clear: both;}
 
 .grid .content{
     width:100%;
     height:100%;
     background-color:blue
 }
-/*Propriedades para textos*/
+@media all and (max-width:375px){
+    .grid .col{
+        width:100%;}
+     }
 
-/* p{
+     @media all and (min-width:376px) and (max-width:768px){
+        .grid .col{
+            width:50%;}
+     }
+     @media all and (min-width:768px) and (max-width:1800px){
+        .grid .col{
+            width:33.33%;}
+     }
+     @media all and (min-width:1800px) and (max-width:2160px){
+        .grid .col{
+            width:25%;}
+     }*/
+/*598. Media queries e breakpoints*/
+/*Propriedades para textos*/
+/*
+ p{
     font-size:20px;
     font-style: italic;
     font-weight: bold;
@@ -46,7 +64,7 @@ background-color:#faff;
     text-transform: capitalize;
 } */
    /*Posicionamento - Position*/
-/*.pai{
+.pai{
 height: 300vh;
 }
 .filha1, .filha2, .filha3{
@@ -81,8 +99,9 @@ p{
    right: 0px;
     bottom:20px ;
     font-size: 20px;
-}*/
-ul{
+}
+
+ ul{
    height: 100px;
    overflow-y: auto;
 }
