@@ -1,25 +1,47 @@
 /*Flexbox*/
 /*o display :flex; posibilita o ajuste dos item no site, depois de colocado no css você precisará de flex-direction:;
 justify-content:; e align-items:; flex-wrap:; align-content:;*/
+/*flex-grow faz os elementos crescerem de acondo com o espaço que sobrou.  flex-basis:;
+   flex-shrink:;. ou você pode usar só flex: 0 para(flex-grow) 0 para( flex-shrink) 0 para ( flex-basis);  */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-.flex-container{
+/*.flex-container{
 background-color: rgba(0, 0, 255, 0.637);
-height: 640px;
-
 display:flex;
+flex-wrap:wrap;
 justify-content:flex-start;
-flex-wrap: wrap;
 align-items:flex-start;
-align-content: center;
+height: 640px;
 }
 .flex-item{
     background-color: red;
-   width:33.33%;
+  width: 100%;
 }
-.flex-item:nth-last-child(2){
+.flex-item:nth-child(2){
+  order:3;  
+}
    
+.flex-item:nth-child(3){
+  
+   align-self: flex-end;
+}
+
+.flex-item:nth-child(5){
+  
+   align-self: center;
+} 
+*/
+body{
+    font-size: 30px;
+}
+.duas-colunas{
+display:flex;
+}
+.col{
+background-color: blueviolet;
+margin:15px;
+padding: 30px;
 }
