@@ -41,7 +41,24 @@ body{
 display:flex;
 }
 .col{
+   display:flex;
+   flex-direction: column;
 background-color: blueviolet;
 margin:15px;
 padding: 30px;
+}
+p{
+  
+   margin: 0 5px 0 0;
+}
+.galeria{
+   display:flex;
+   flex-flow:row wrap ;
+
+}
+.galeria .img{
+ margin: 10px;
+background-color: blue;
+flex:1 0 20%;
+height: 50px;
 }
