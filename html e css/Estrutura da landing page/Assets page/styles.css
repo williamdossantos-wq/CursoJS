@@ -2,6 +2,9 @@ body{
     margin:0;
     padding:0;
 }
+:root{
+    --gap:3rem;
+}
 /*navegão*/
 nav{
     width:100%;
@@ -24,6 +27,9 @@ ul li{
   
 }
 /*conteudo*/
+main{
+    padding: var(--gap);
+}
 section{
     width:100%;
    
