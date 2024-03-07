@@ -5,7 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
            <style>
-            
+            *{
+                margin: 0;
+                padding:0;
+            }
             
             b{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -13,25 +16,33 @@
             a{
                 color:rgb(49, 69, 248);
             }
-            main{
-                width: 70%;
-                margin: auto;
-            }
-            .fix{
-               
-                position: fixed;
-            }
+            /* menu*/
             .menu{
                 background-color:red;
                 display: flex;
                 justify-content: space-around;
+                height:50px;
+              width:100%;
+                position: fixed;
+                align-items: center;
+              top: 0;
             }
             .menu-ul{
                 display: flex;
             }
             .menu-ul li{
-               margin:5px;
-               list-style-type: none;
+               margin:0 20px 0 0;
+               list-style-type: none; 
+              
+            }
+
+            /*main*/
+            main{
+                width: 70%;
+                margin: auto;
+            }
+           .baixo{
+                margin:60px 0 0 0;
             }
             main p{
                 font-size:20px;
@@ -98,31 +109,22 @@
            </style>
     </head>
     <body>
-        <p>
-            ola mundo
-        </p>
-        <h1>meu html</h1>
-       <span>Lorem ipsum</span>
-              <span>Lorem ipsum</span>
-              <span>Lorem ipsum</span>
-              <div class="grid">
-             <div class="lado"></div>
-           
+             <div class="fix">
+                <header CLASS="menu">
+                    <h1><span>Os Miseráveis</span></h1>
+                <nav>
+            <ul class="menu-ul">
+                <li><a href="#I">Volume I: Fantine</a></li>
+                <li><a href="#II">Volume II: Cosette</a></li>
+                <li><a href="#III">Volume III: Marius</a></li>
+                <li><a href="#IV">Volume IV: Idílio...</a></li>
+            </ul>
+                </nav>
+            </header>
+            </div>
               <main>
-                <div class="fix">
-                    <header CLASS="menu">
-                        <h1><span>Os Miseráveis</span></h1>
-                    <nav>
-                <ul class="menu-ul">
-                    <li><a href="#I">Volume I: Fantine</a></li>
-                    <li><a href="#II">Volume II: Cosette</a></li>
-                    <li><a href="#III">Volume III: Marius</a></li>
-                    <li><a href="#IV">Volume IV: Idílio...</a></li>
-                </ul>
-                    </nav>
-                </header>
-                </div>
-              <h1>Os Miseráveis</h1>
+                
+              <h1 class="baixo">Os Miseráveis</h1>
               <blockquote><p>Para outros significados, veja <a href="https://pt.wikipedia.org/wiki/Os_Miser%C3%A1veis_(desambigua%C3%A7%C3%A3o)" target="_blank">Os Miseráveis (desambiguação)</a>.</p></blockquote>
 <p id="h-dois"><b>Les Misérables</b> (Os Miseráveis) é um romance de <a href="https://pt.wikipedia.org/wiki/Victor_Hugo" target="_blank">Victor Hugo</a> publicado em 1862 que deu origem a muitas adaptações, no cinema e muitas outras mídias. Neste romance emblemático da <a href='https://pt.wikipedia.org/wiki/Literatura_francesa' target="_blank">literatura francesa</a> que descreve a vida das pessoas pobres em Paris e na França provincial do século XIX, o autor se concentra mais particularmente no destino do condenado <a href="https://pt.wikipedia.org/wiki/Jean_Valjean" target="_blank">Jean Valjean</a>.
 
@@ -388,6 +390,5 @@
     </li>
 </ul>
 </main>
-</div>
     </body>
 </html>
