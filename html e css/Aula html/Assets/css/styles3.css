@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    font-size:30px;
+    font-family: sans-serif;
+}
+
+.grid{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows:repeat(2, 1fr 2fr);
+    gap:30px;
+}
+.grid div{
+    background-color:purple;
+    min-height:100px;
+}
+
+@media (max-width:720px){
+    .grid div:nth-child(5){
+        background-color:yellow;
+       grid-row: span 1;
+       grid-column: span 2;}
+}
