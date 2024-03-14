@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+aside{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+width:100%;
+}
+.menu-content{
+    background-color: aqua;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+ padding-top:0;
+ padding-bottom: 0;
+   
+}
+.main-content{
+     height: 70px; 
+     margin:0 auto;
+
+}
+.menu-content h1{
+    font-size:27px;
+
+}
+nav ul{
+    display:flex;
+
+}
+nav ul li{
+    margin-left: 15px;
+    list-style: none;
+    font-size: 23px;
+}
+div{
+    height:65px;
+}
+section{
+    height: 100vh;
+    background-color: azure;
+}
