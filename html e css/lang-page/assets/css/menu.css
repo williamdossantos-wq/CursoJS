@@ -1,5 +1,5 @@
 .cor-do-menu{
-    background-color:red;
+    background-color:#ffff;
     color:black;
 }
 .menu{
@@ -7,7 +7,11 @@
     z-index: 1;
     width:100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height:67px;
+    margin:0 auto;
+    align-items: center;
+    border: 1px solid black;
 }
 nav ul{
     display: flex;
@@ -15,4 +19,12 @@ nav ul{
 }
 nav ul li{
     margin:0 10px 0 10px;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+   color:black;
+}
+nav ul li:hover{
+cursor: pointer;
 }
