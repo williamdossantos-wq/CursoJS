@@ -59,11 +59,37 @@ height:460px;
 }
 /**/
 #text{
-    background-color: #ee4949;
+    background-color: #ffff;
 }
+.text{
+    display: flex;
+    justify-content: center;
+    max-width: 64rem;
+    min-height: 100vh;
+}
+.text-content{
+text-align: center;
+}
+.text-content h2{
+    font-size:5rem;
+    font-family:sans-serif;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+}
+.text-content p{
+    margin-bottom:2rem;
+}
+
 /**/
 #grid-one{
     background-color: rgba(170, 170, 17, 0.976);
+}
+
+.grid-one-content h2{
+    font-size:5rem;
+}
+.grid-one-content h3{
+    font-size:3rem;
 }
 /**/
 #gallery{
