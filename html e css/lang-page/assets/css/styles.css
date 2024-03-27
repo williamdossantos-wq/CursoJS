@@ -26,6 +26,9 @@ padding:10rem;
 
 }
 /**/
+
+
+
 #intro{
    background-size:cover;
     background-image: url(../img/main-bg.svg);
@@ -47,7 +50,10 @@ padding:10rem;
    color:white;
 }
 .intro-text-content h2{
-    font-size:4rem;
+    font-size:6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 5rem;
 }
 .intro-img{
     max-width: 100%;
@@ -57,6 +63,9 @@ padding:10rem;
 width:667;
 height:460px;
 }
+
+
+
 /**/
 #text{
     background-color: #ffff;
@@ -181,8 +190,72 @@ table{
     width:100%;
     border-collapse: collapse;
 }
+.tabela-responsivo table caption{
+    text-align: left;
+    font-size:1.6rem;
+    font-style: italic;
+}
+.tabela-responsivo table th{
+    background-color: #eeee;
+}
+table tbody tr td{
+    border:1px solid #eeee;
+}
+table tfoot td{
+    background-color: #eeee;
+
+}
+table th, table td{ 
+    text-align: left;
+   padding:1rem;
+   
+}
 
 /**/
 #contant{
-    background-color: #f6ff00;
+    background-size:cover;
+    background-image: url(../img/main-bg.svg);
+    background-position:center center;
 }
+
+.grid-contant{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+     position:relative;
+     gap:30px;
+     top:-2rem;
+     min-height: 100vh;
+}
+.contant-text-content , .contant-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   color:white;
+}
+.contant-text-content h2{
+    font-size:6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+}
+.contant-img{
+    max-width: 100%;
+    height:auto;
+}
+.img-da-intro{
+width:667;
+height:460px;
+}
+
+
+.formulario{
+    color:#ffff;
+    grid-column: span 2;
+}
+fieldset legend{
+    text-align: left;
+    font-size:1.6rem;
+    font-style: italic;
+}
+fieldset
