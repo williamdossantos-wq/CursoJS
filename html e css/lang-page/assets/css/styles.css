@@ -253,9 +253,43 @@ height:460px;
     color:#ffff;
     grid-column: span 2;
 }
+.fomulario-contant{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}
 fieldset legend{
     text-align: left;
     font-size:1.6rem;
     font-style: italic;
 }
-fieldset
+.forma-de-grupo{
+    flex:1 1 320px;
+}
+.forma-de-grupo input, .full-width textarea{
+    border:none;
+    background:#ffffff;
+    width:100%;
+    padding:1.5rem 2rem;
+    font-size:3rem;
+   outline: none;
+}
+body .full-width{
+    width: 100%;
+    flex:1 1 100%;
+}
+.forma-de-grupo button{
+    padding:1.5rem 2rem;
+    font-size:2.5rem;
+    border:0.5rem solid #ffffff;
+    color:#ffffff;
+    background:none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.forma-de-grupo button:hover{
+    background-color: #ffff;
+    color: black;
+}
