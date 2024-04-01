@@ -1,2 +1,26 @@
+.menu{
+    position: fixed;
+    background-color: #ffff;
+    width: 100%;
+   border: 2px solid #000000;
+}
+.cor{
+    display: flex;
+    justify-content: space-around;
+}
+.cor nav ul{
+    display:flex;
+  
 
-
+}
+nav ul li  {
+    margin: 10px;
+  list-style: none;
+}
+ul li a {
+  padding: 10px;
+}
+.main-content-nav{
+    max-width:120rem;
+    margin: 0 auto;
+}
