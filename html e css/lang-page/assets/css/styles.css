@@ -12,7 +12,7 @@ body{
     font-size:2em;
 }   
 .space{
-    height:67px;
+    height:53px;
 }
 section{
    display: block;
@@ -149,7 +149,18 @@ color: #ffff;
     max-width: 36rem;
     max-height: 36rem;
 }
+@media(max-width:900px){
+.grid-img{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:30px;
 
+}
+.gallery  div img{
+    width: 100%;
+    max-width: 700px;
+}
+}
 /**/
 #grid-two{
     background-size:cover;
@@ -173,6 +184,12 @@ color: #ffff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+@media(max-width:900px){
+    .grid-t{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;}
 }
 /**/
 #pricing{
@@ -252,8 +269,8 @@ table th, table td{
     line-height: 1.2;
     margin-bottom: 5rem;
 }
-.contant-img {
-    max-width: 100%;
+.contant-img img {
+    width: 100%;
     height:auto;
 }
 
