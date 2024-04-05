@@ -320,6 +320,21 @@ footer div p{
     font-size: 20px;
 }
 /**/
+.back-to-top{
+    position:fixed;
+    bottom:2rem;
+    right:2rem;
+    background-color:#ffff;
+    width:5rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50% ;
+    color:#2f2e2e;
+    font-size: 4rem;
+    border:1px solid #2f2e2e;
+}
 @media(max-width:900px){
     .grid-intro{
         display:grid;
@@ -366,14 +381,6 @@ footer div p{
                 min-height: 100vh;
             }
 
-            .menu{
-              bottom: 0;
-              text-align: center;
-            
-            }
-            .cor, .cor nav ul{
-               flex-direction: column;
-            }
             
 }
 
