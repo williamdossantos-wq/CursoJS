@@ -9,7 +9,7 @@ html{
 }
 body{
     line-height: 1.5;
-    font-size:2em;
+    font-size:2rem;
 }   
 .space{
     height:53px;
@@ -61,16 +61,7 @@ padding:10rem;
 }
 
 
-@media(max-width:900px){
-    .grid-intro{
-        display:grid;
-    grid-template-columns: 1fr ;
-     position:relative;
-     gap:30px;
-     top:-2rem;
-     min-height: 100vh;
-    }
-}
+
 
 /**/
 #text{
@@ -119,12 +110,7 @@ color: #ffff;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-@media(max-width:900px){
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr ;
-        gap: 20px;}
-}
+
 /**/
 #gallery{
     background-color: #ffff;
@@ -155,18 +141,7 @@ transform:translate(-3%,3%)scale(1.2)rotate(5deg);
     max-width: 36rem;
     max-height: 36rem;
 }
-@media(max-width:900px){
-.grid-img{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:30px;
 
-}
-.gallery  div img{
-    width: 100%;
-    max-width: 700px;
-}
-}
 /**/
 #grid-two{
     background-size:cover;
@@ -191,12 +166,7 @@ color: #ffff;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-@media(max-width:900px){
-    .grid-t{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;}
-}
+
 /**/
 #pricing{
     background-color: #ffff;
@@ -350,3 +320,73 @@ footer div p{
     font-size: 20px;
 }
 /**/
+@media(max-width:900px){
+    .grid-intro{
+        display:grid;
+    grid-template-columns: 1fr ;
+     position:relative;
+     gap:30px;
+     top:-2rem;
+     min-height: 100vh;
+    }
+    
+     .grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;}
+
+        .grid-t{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;}
+         
+            .space{
+                display:none;
+            }
+            .grid-img{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap:30px;
+            
+            }
+            .gallery  div img{
+               width: 100%;
+                max-width: 300px;
+            }  
+            .formulario{
+                color:#ffff;
+                grid-column:1;
+            }
+            .grid-contant {
+                display: grid;
+                grid-template-columns: 1fr;
+                position: relative;
+                gap: 30px;
+                top: -2rem;
+                min-height: 100vh;
+            }
+
+            .menu{
+              bottom: 0;
+              text-align: center;
+            
+            }
+            .cor, .cor nav ul{
+               flex-direction: column;
+            }
+            
+}
+
+    @media(max-width:500px){
+        .grid-img{
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap:30px;
+        
+        }
+        .gallery  div img{
+           width: 100%;
+            max-width: 200px;
+        }
+        }
+       

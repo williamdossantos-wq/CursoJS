@@ -4,7 +4,11 @@
     width: 100%;
    border: 2px solid #000000;
    z-index: 1;
+   top: 0;
+   left: 0;
+   right: 0;
 }
+
 .cor{
     display: flex;
     justify-content: space-around;
@@ -31,3 +35,4 @@ li{
 a {
   text-decoration: none;
 }
+
